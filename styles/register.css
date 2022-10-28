@@ -170,6 +170,10 @@ label:not(.city-label, .gender-field > label){
     display: none;
 }
 
+input:focus + label{
+    display: block;
+}
+
 input:focus:not(type=radio) + label{
     display: block;
 }
