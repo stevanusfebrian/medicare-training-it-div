@@ -170,7 +170,7 @@ label:not(.city-label, .gender-field > label){
     display: none;
 }
 
-input:focus + label{
+input:focus + label:not(.male-label, .female-label){
     display: block;
 }
 
