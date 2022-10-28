@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicare | Register</title>
+    <link rel="stylesheet" href="styles/register.css">
+</head>
+<body>
+    <nav>
+        <div class="leftnav">
+            <a href="home.html"><img src="assets/icon.png" alt=""></a>
+        </div>
+        <div class="ham-button">
+            <button type="button">&#9776</button>
+        </div>
+        <div class="rightnav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="products"><a href="products.html" >Products</a>
+                    <ul class="product-items">
+                        <li><a href="products.html">Healthcare</a></li>
+                        <li><a href="products.html">Cosmetic</a></li>
+                        <li><a href="products.html">Misc.</a></li>
+                    </ul>
+                </li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="login.html" class="login">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <!-- <div class="overlay"></div> -->
+        <div class="heading">
+            <h1>Register</h1>
+        </div>
+        <form action="#" id="form" method="post">
+            <div class="name-field field">
+                <input type="text" name="name" id="name" placeholder="Full Name">
+                <label for="name" class="name-label">Full Name</label>
+                <p class="name-error error"></p>
+            </div>
+
+            <div class="email-field field">
+                <input type="text" name="email" id="email" placeholder="Email">
+                <label for="email" class="email-label">Email</label>
+                <p class="email-error error"></p>
+            </div>
+            
+            <div class="gender-field field">
+                <label for="gender" class="gender-label">Gender</label>
+                <input type="radio" name="radio" id="male">
+                <label for="male" class="male-label">Male</label>
+                <input type="radio" name="radio" id="female">
+                <label for="female" class="female-label">Female</label>
+                <p class="gender-error error"></p>
+            </div>
+
+            <div class="city-field field">
+                <label for="city" class="city-label">City</label>
+                <select name="city" id="city">
+                    <option value="">Choose City</option>
+                    <option value="Aceh">Aceh</option>
+                    <option value="Balikpapan">Balikpapan</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Makassar">Makassar</option>
+                    <option value="Medan">Medan</option>
+                    <option value="Palembang">Palembang</option>
+                    <option value="Pontianak">Pontianak</option>
+                    <option value="Surabaya">Surabaya</option>
+                </select>
+                <p class="city-error error"></p>
+            </div>
+
+            <div class="password-field field">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <label for="password" class="password-label">Password</label>
+                <p class="password-error error"></p>
+            </div>
+
+            <div class="cpassword-field field">
+                <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password">
+                <label for="cpassword" class="cpassword-label">Confirm Password</label>
+                <p class="cpassword-error error"></p>
+            </div>
+
+            <button type="submit" class="register">Register</button>
+        </form>
+    </section>
+    <script src="scripts/navbar.js"></script>
+</body>
+</html>
